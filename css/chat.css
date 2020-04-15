@@ -11,6 +11,7 @@
 .chats-body{
     padding: 10px 0px;
     padding-top: 100px;
+    height: 100%;
 }
 
 .chats-body .header,
@@ -159,6 +160,7 @@
 
 .incoming-message{
     align-self: flex-start;
+    margin-left: 20px;
 }
 
 .incoming-message .message__author{
@@ -168,8 +170,9 @@
     font-weight: 600;
 }
 
-.sent-message{
+.sent-message{  
     align-self: flex-end;
+    margin-right: 20px;
     
 }
 
