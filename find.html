@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/da8e6d0d83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css"/>
     <title>Find | Kakao Clone</title>
 </head>
 <body>
@@ -11,12 +12,14 @@
         <div class="status__column">
             <span class="status__clock">13:54</span>
         </div>
-        <div class="status__column"></div>
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+        <div class="status__column">
+            <i class="fas fa-clock"></i>
+            <i class="fas fa-volume-mute"></i>
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-ban"></i>
+            <span class="status-bar__battery-level">100%</span>
+            <i class="fas fa-battery-full"></i>
+        </div>
     </div>
     <header class="header">
         <div class="header__header-column">
@@ -32,25 +35,83 @@
             </span>
         </div>
     </header>
-    <div class="nav">
+
+    <main class="find">
+        <header class="find__header">
+            <ul class="find__header-list">
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-qrcode fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        QR Code
+                    </span>
+                </li>
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-user-plus fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        Add by Contacts
+                    </span>
+                </li>
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-passport fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        Add by ID
+                    </span>
+                </li>
+                <li class="find__header-btn header-btn">
+                    <span class="header-btn__icon">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </span>
+                    <span class="header-btn__title">
+                        Invite
+                    </span>
+                </li>
+            </ul>
+        </header>
+
+        <ul class="find__recommended">
+            <h5 class="find__title">
+                Recommended Friends
+            </h5>
+            <li class="find__friend friend friend--lg">
+                <div class="friend__column">
+                    <img src="image/avatar.jpg" class="friend__avatar" />
+                    <div class="friend__content">
+                        <span class="friend__name">Nicolas Serrano</span>                       
+                    </div>
+                </div>
+                <div class="friend __column">
+                    <span class="friend__add-btn">
+                        <i class="fas fa-user-plus"></i>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <nav class="nav">
         <ul class="nav__list">
             <li class="nav__list-item"><a href="friends.html" class="nav__list-link">
-                <i class="far fa-user"></i>
-            </a></li>
-
+                    <i class="far fa-user"></i>
+                </a></li>
             <li class="nav__list-item"><a href="index.html" class="nav__list-link">
-                <i class="far fa-comment"></i>
-
-            </a></li>
+                    <div class="nav__badge">8</div>
+                    <i class="fas fa-comment"></i>
+                </a></li>
             <li class="nav__list-item"><a href="find.html" class="nav__list-link">
-                <i class="fas fa-search"></i>
-
-            </a></li>
+                    <i class="fas fa-search"></i>
+                </a></li>
             <li class="nav__list-item"><a href="more.html" class="nav__list-link">
-                <i class="fas fa-ellipsis-h"></i>
-
-
-            </a></li>
+                    <i class="fas fa-ellipsis-h"></i>
+                </a></li>
+        </ul>
+    </nav>
+    <div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen small!!</span>
     </div>
 </body>
 </html>
